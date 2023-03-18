@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board{
+    height: 750px;
+    width: 500px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.square{
+    background-color: red;
+    aspect-ratio: 1/1;
+    grid-column-start: 1;
+    grid-row-start: 1
+}
